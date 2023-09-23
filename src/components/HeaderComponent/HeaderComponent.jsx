@@ -7,18 +7,23 @@ import {
   CaretDownOutlined,
   ShoppingCartOutlined,
 } from '@ant-design/icons';
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 
 const HeaderComponent = () => {
   return (
     <div> 
-      <WrappHeader gutter={16}>
+      <WrappHeader >
       <Col span={6}>
         <WrappTextHeader>Hieuuuuuuuuuu</WrappTextHeader>
       </Col>
       <Col span={12}>
-      <Search placeholder="input search text"  enterButton />
+      <ButtonInputSearch 
+      size="large"
+      bordered = {false}
+      textButton="Tim kiem"
+      placeholder="input search text" />
       </Col>
-      <Col span={6} style={{display:'flex', gap:'20px'}}>
+      <Col span={6} style={{display:'flex', gap:'20px' , alignItems: 'center'}}>
       <WrappHeaderAccount>
         
           <UserOutlined style={{fontSize:'30px'}} />
